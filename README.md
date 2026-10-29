@@ -9,6 +9,8 @@ Unofficial archive of [Meteor Client](https://github.com/MeteorDevelopment/meteo
 
 Enable Pages: Settings > Pages > Deploy from branch > `main` / `(root)`.
 
+Check https://1x09.github.io/meteor-client-archive/ for the archive.
+
 ## Getting the jars
 1. Go to the **Actions** tab, pick **Build jars**, click **Run workflow**.
 2. Wait for it to finish (about 10 to 20 minutes). Jars land in the **jars** release.
