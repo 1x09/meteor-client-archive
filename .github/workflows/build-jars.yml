@@ -1,0 +1,82 @@
+name: Build jars
+
+# Builds every Meteor Client version from the upstream repo and uploads the jars
+# to this repo's "jars" release. Run it from the Actions tab (Run workflow).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create jars release if missing
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view jars --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1 || \
+          gh release create jars --repo "$GITHUB_REPOSITORY" --title "Meteor Client jars" \
+            --notes "Jars built from upstream tags by GitHub Actions. Unofficial; some old versions may not build."
+
+  build:
+    needs: release
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # JDK 21: Minecraft 1.20.5 and newer
+          - { tag: 1.21.8, java: 21 }
+          - { tag: 1.21.5, java: 21 }
+          - { tag: 1.21.4, java: 21 }
+          - { tag: v0.5.9, java: 21 }
+          - { tag: v0.5.8, java: 21 }
+          - { tag: v0.5.7, java: 21 }
+          - { tag: v0.5.6, java: 21 }
+          # JDK 17: Minecraft 1.18 to 1.20.4
+          - { tag: v0.5.5, java: 17 }
+          - { tag: v0.5.5-norbit, java: 17 }
+          - { tag: v0.5.4, java: 17 }
+          - { tag: v0.5.4-damage-utils, java: 17 }
+          - { tag: v0.5.3, java: 17 }
+          - { tag: v0.5.2, java: 17 }
+          - { tag: v0.5.1, java: 17 }
+          - { tag: v0.5.0, java: 17 }
+          - { tag: v0.4.9, java: 17 }
+          - { tag: v0.4.8, java: 17 }
+          - { tag: v0.4.7, java: 17 }
+          - { tag: v0.4.6, java: 17 }
+          # JDK 16/11: Minecraft 1.16 to 1.17
+          - { tag: v0.4.5, java: 16 }
+          - { tag: v0.4.4, java: 16 }
+          - { tag: v0.4.3, java: 16 }
+          - { tag: v0.4.2, java: 11 }
+          - { tag: v0.4.1, java: 11 }
+          - { tag: v0.4.0, java: 11 }
+          - { tag: v0.3.9, java: 11 }
+          - { tag: v0.3.8, java: 11 }
+          - { tag: v0.3.6, java: 11 }
+          - { tag: v0.3.5, java: 11 }
+    steps:
+      - name: Checkout upstream at tag
+        uses: actions/checkout@v4
+        with:
+          repository: MeteorDevelopment/meteor-client
+          ref: ${{ matrix.tag }}
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ matrix.java }}
+      - name: Build
+        run: |
+          chmod +x gradlew
+          ./gradlew build -x test --no-daemon
+      - name: Upload jar to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          JAR=$(ls build/libs/*.jar | grep -v -e '-sources' -e '-dev' -e '-javadoc' | head -n1)
+          cp "$JAR" "meteor-client-${{ matrix.tag }}.jar"
+          gh release upload jars "meteor-client-${{ matrix.tag }}.jar" --clobber --repo "$GITHUB_REPOSITORY"

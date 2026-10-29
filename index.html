@@ -1,79 +1,221 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
 <title>Meteor Client Archive</title>
+<meta name="description" content="Every Meteor Client release as a source zip and a jar, plus the full git history.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&family=Pixelify+Sans:wght@500;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fff;--fg:#1a1a1f;--muted:#666;--line:#ddd;--accent:#7b3fe4;--row:#f6f3fd}
-@media(prefers-color-scheme:dark){:root{--bg:#14141a;--fg:#ececf1;--muted:#9a9aa6;--line:#2c2c36;--accent:#a67bff;--row:#1d1b27}}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,sans-serif}
-main{max-width:860px;margin:0 auto;padding:2rem 1rem}
-h1{margin:.2rem 0} p{color:var(--muted)} a{color:var(--accent)}
-.box{border:1px solid var(--line);border-radius:10px;padding:1rem;margin:1.2rem 0}
-code,pre{background:var(--row);border-radius:6px;padding:.1rem .35rem;font-size:.9em}
-pre{padding:.8rem;overflow-x:auto}
-.wrap{overflow-x:auto} table{border-collapse:collapse;width:100%}
-th,td{text-align:left;padding:.5rem;border-bottom:1px solid var(--line);white-space:nowrap}
-tr:nth-child(even) td{background:var(--row)}
-</style></head><body><main>
-<h1>Meteor Client Archive</h1>
-<p>Source snapshots of every tagged version of <a href="https://github.com/MeteorDevelopment/meteor-client">Meteor Client</a>, plus the full git history. Unofficial mirror, not affiliated with the Meteor Development team. Meteor Client is GPL-3.0 licensed.</p>
-<div class="box"><strong>Full history</strong> (all branches and tags, 48 MB):
-<a href="meteor-client-full-history.bundle">meteor-client-full-history.bundle</a>
-<pre>git clone meteor-client-full-history.bundle meteor-client</pre></div>
-<div class="box"><strong>Building a version</strong>: extract a zip, then run <code>./gradlew build</code>. The jar is created in <code>build/libs/</code>. Older versions need older JDKs and target older Minecraft versions, so check each one's README.<br>
-Prebuilt jars are not on GitHub releases; get them from the official site, <a href="https://meteorclient.com">meteorclient.com</a>.</div>
-<div class="wrap"><table><thead><tr><th>Version</th><th>Date</th><th>Size</th><th>Download</th><th>Upstream</th></tr></thead><tbody>
-<tr><td>1.21.8</td><td>2025-10-17</td><td>1.9 MB</td><td><a href="versions/meteor-client-1.21.8.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/1.21.8">View on GitHub</a></td></tr>
-<tr><td>1.21.5</td><td>2025-06-21</td><td>1.9 MB</td><td><a href="versions/meteor-client-1.21.5.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/1.21.5">View on GitHub</a></td></tr>
-<tr><td>1.21.4</td><td>2025-04-08</td><td>1.9 MB</td><td><a href="versions/meteor-client-1.21.4.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/1.21.4">View on GitHub</a></td></tr>
-<tr><td>v0.5.9</td><td>2025-01-06</td><td>1.8 MB</td><td><a href="versions/meteor-client-v0.5.9.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.5.9">View on GitHub</a></td></tr>
-<tr><td>v0.5.8</td><td>2024-11-07</td><td>1.8 MB</td><td><a href="versions/meteor-client-v0.5.8.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.5.8">View on GitHub</a></td></tr>
-<tr><td>v0.5.7</td><td>2024-06-21</td><td>1.8 MB</td><td><a href="versions/meteor-client-v0.5.7.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.5.7">View on GitHub</a></td></tr>
-<tr><td>v0.5.6</td><td>2024-05-03</td><td>1.8 MB</td><td><a href="versions/meteor-client-v0.5.6.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.5.6">View on GitHub</a></td></tr>
-<tr><td>v0.5.5</td><td>2023-12-08</td><td>1.8 MB</td><td><a href="versions/meteor-client-v0.5.5.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.5.5">View on GitHub</a></td></tr>
-<tr><td>v0.5.5-norbit</td><td>2023-12-03</td><td>1.8 MB</td><td><a href="versions/meteor-client-v0.5.5-norbit.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.5.5-norbit">View on GitHub</a></td></tr>
-<tr><td>v0.5.4</td><td>2023-10-08</td><td>1.8 MB</td><td><a href="versions/meteor-client-v0.5.4.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.5.4">View on GitHub</a></td></tr>
-<tr><td>v0.5.4-damage-utils</td><td>2023-08-06</td><td>1.8 MB</td><td><a href="versions/meteor-client-v0.5.4-damage-utils.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.5.4-damage-utils">View on GitHub</a></td></tr>
-<tr><td>v0.5.3</td><td>2023-06-09</td><td>1.8 MB</td><td><a href="versions/meteor-client-v0.5.3.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.5.3">View on GitHub</a></td></tr>
-<tr><td>v0.5.2</td><td>2023-03-16</td><td>1.8 MB</td><td><a href="versions/meteor-client-v0.5.2.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.5.2">View on GitHub</a></td></tr>
-<tr><td>v0.5.1</td><td>2022-12-10</td><td>1.8 MB</td><td><a href="versions/meteor-client-v0.5.1.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.5.1">View on GitHub</a></td></tr>
-<tr><td>v0.5.0</td><td>2022-07-28</td><td>1.4 MB</td><td><a href="versions/meteor-client-v0.5.0.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.5.0">View on GitHub</a></td></tr>
-<tr><td>v0.4.9</td><td>2022-06-08</td><td>1.3 MB</td><td><a href="versions/meteor-client-v0.4.9.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.4.9">View on GitHub</a></td></tr>
-<tr><td>v0.4.8</td><td>2022-04-08</td><td>1.3 MB</td><td><a href="versions/meteor-client-v0.4.8.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.4.8">View on GitHub</a></td></tr>
-<tr><td>v0.4.7</td><td>2022-01-21</td><td>1.3 MB</td><td><a href="versions/meteor-client-v0.4.7.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.4.7">View on GitHub</a></td></tr>
-<tr><td>v0.4.6</td><td>2021-10-29</td><td>1.3 MB</td><td><a href="versions/meteor-client-v0.4.6.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.4.6">View on GitHub</a></td></tr>
-<tr><td>v0.4.5</td><td>2021-07-19</td><td>1.6 MB</td><td><a href="versions/meteor-client-v0.4.5.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.4.5">View on GitHub</a></td></tr>
-<tr><td>v0.4.4</td><td>2021-06-06</td><td>1.6 MB</td><td><a href="versions/meteor-client-v0.4.4.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.4.4">View on GitHub</a></td></tr>
-<tr><td>v0.4.3</td><td>2021-04-23</td><td>1.4 MB</td><td><a href="versions/meteor-client-v0.4.3.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.4.3">View on GitHub</a></td></tr>
-<tr><td>v0.4.2</td><td>2021-03-10</td><td>1.3 MB</td><td><a href="versions/meteor-client-v0.4.2.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.4.2">View on GitHub</a></td></tr>
-<tr><td>v0.4.1</td><td>2021-02-14</td><td>1.3 MB</td><td><a href="versions/meteor-client-v0.4.1.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.4.1">View on GitHub</a></td></tr>
-<tr><td>v0.4.0</td><td>2021-02-03</td><td>1.3 MB</td><td><a href="versions/meteor-client-v0.4.0.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.4.0">View on GitHub</a></td></tr>
-<tr><td>v0.3.9</td><td>2021-01-07</td><td>1.2 MB</td><td><a href="versions/meteor-client-v0.3.9.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.3.9">View on GitHub</a></td></tr>
-<tr><td>v0.3.8</td><td>2020-12-10</td><td>1.2 MB</td><td><a href="versions/meteor-client-v0.3.8.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.3.8">View on GitHub</a></td></tr>
-<tr><td>v0.3.6</td><td>2020-10-26</td><td>1.1 MB</td><td><a href="versions/meteor-client-v0.3.6.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.3.6">View on GitHub</a></td></tr>
-<tr><td>v0.3.5</td><td>2020-10-12</td><td>1.1 MB</td><td><a href="versions/meteor-client-v0.3.5.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.3.5">View on GitHub</a></td></tr>
-<tr><td>v0.3.1</td><td>2020-08-17</td><td>2.3 MB</td><td><a href="versions/meteor-client-v0.3.1.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.3.1">View on GitHub</a></td></tr>
-<tr><td>v0.3.0</td><td>2020-08-16</td><td>2.3 MB</td><td><a href="versions/meteor-client-v0.3.0.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.3.0">View on GitHub</a></td></tr>
-<tr><td>v0.2.9</td><td>2020-08-06</td><td>2.3 MB</td><td><a href="versions/meteor-client-v0.2.9.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.2.9">View on GitHub</a></td></tr>
-<tr><td>v0.2.8</td><td>2020-07-21</td><td>2.3 MB</td><td><a href="versions/meteor-client-v0.2.8.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.2.8">View on GitHub</a></td></tr>
-<tr><td>v0.2.7</td><td>2020-07-19</td><td>2.3 MB</td><td><a href="versions/meteor-client-v0.2.7.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.2.7">View on GitHub</a></td></tr>
-<tr><td>v0.2.6</td><td>2020-07-07</td><td>2.3 MB</td><td><a href="versions/meteor-client-v0.2.6.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.2.6">View on GitHub</a></td></tr>
-<tr><td>v0.2.5</td><td>2020-06-30</td><td>2.2 MB</td><td><a href="versions/meteor-client-v0.2.5.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.2.5">View on GitHub</a></td></tr>
-<tr><td>v0.2.4</td><td>2020-06-21</td><td>2.2 MB</td><td><a href="versions/meteor-client-v0.2.4.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.2.4">View on GitHub</a></td></tr>
-<tr><td>v0.2.3</td><td>2020-05-28</td><td>0.9 MB</td><td><a href="versions/meteor-client-v0.2.3.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.2.3">View on GitHub</a></td></tr>
-<tr><td>v0.2.2</td><td>2020-05-22</td><td>0.9 MB</td><td><a href="versions/meteor-client-v0.2.2.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.2.2">View on GitHub</a></td></tr>
-<tr><td>v0.2.1</td><td>2020-04-28</td><td>0.4 MB</td><td><a href="versions/meteor-client-v0.2.1.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.2.1">View on GitHub</a></td></tr>
-<tr><td>v0.2.0</td><td>2020-04-14</td><td>0.3 MB</td><td><a href="versions/meteor-client-v0.2.0.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.2.0">View on GitHub</a></td></tr>
-<tr><td>v0.1.9</td><td>2020-04-10</td><td>0.3 MB</td><td><a href="versions/meteor-client-v0.1.9.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.1.9">View on GitHub</a></td></tr>
-<tr><td>v0.1.8</td><td>2020-04-07</td><td>0.3 MB</td><td><a href="versions/meteor-client-v0.1.8.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.1.8">View on GitHub</a></td></tr>
-<tr><td>v0.1.7</td><td>2020-04-03</td><td>0.3 MB</td><td><a href="versions/meteor-client-v0.1.7.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.1.7">View on GitHub</a></td></tr>
-<tr><td>v0.1.6</td><td>2020-03-31</td><td>0.3 MB</td><td><a href="versions/meteor-client-v0.1.6.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.1.6">View on GitHub</a></td></tr>
-<tr><td>v0.1.5</td><td>2020-03-28</td><td>0.2 MB</td><td><a href="versions/meteor-client-v0.1.5.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.1.5">View on GitHub</a></td></tr>
-<tr><td>v0.1.4</td><td>2020-03-25</td><td>0.2 MB</td><td><a href="versions/meteor-client-v0.1.4.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.1.4">View on GitHub</a></td></tr>
-<tr><td>v0.1.3</td><td>2020-03-22</td><td>0.2 MB</td><td><a href="versions/meteor-client-v0.1.3.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.1.3">View on GitHub</a></td></tr>
-<tr><td>v0.1.2</td><td>2020-03-20</td><td>0.2 MB</td><td><a href="versions/meteor-client-v0.1.2.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.1.2">View on GitHub</a></td></tr>
-<tr><td>v0.1.1</td><td>2020-03-18</td><td>0.2 MB</td><td><a href="versions/meteor-client-v0.1.1.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.1.1">View on GitHub</a></td></tr>
-<tr><td>v0.1.0</td><td>2020-03-17</td><td>0.2 MB</td><td><a href="versions/meteor-client-v0.1.0.zip">Source .zip</a></td><td><a href="https://github.com/MeteorDevelopment/meteor-client/tree/v0.1.0">View on GitHub</a></td></tr>
-</tbody></table></div>
-<p>Servers often ban Meteor. Check a server's rules before using it.</p>
-</main></body></html>
+:root{
+  --sky:#0c1230; --sky-deep:#070b20; --panel:#141c42; --line:#27336b;
+  --text:#e9edff; --muted:#8e9bd0; --ember:#ffa24a; --ember-hot:#ff6a3d;
+  --emerald:#5fe39a; --ink:#0a0f26;
+  --px:'Pixelify Sans','Courier New',monospace;
+  --body:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--sky-deep);color:var(--text);font:400 1rem/1.55 var(--body);overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ember);outline-offset:3px}
+
+/* ---------- sky ---------- */
+.sky{position:absolute;inset:0 0 auto 0;height:640px;z-index:0;overflow:hidden;pointer-events:none;
+  background:linear-gradient(180deg,#1a2561 0%,var(--sky) 55%,var(--sky-deep) 100%)}
+.sky canvas{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated}
+.streak{position:absolute;top:-40px;right:-60px;width:260px;height:10px;opacity:0;
+  background:linear-gradient(90deg,transparent,rgba(255,162,74,.15) 30%,var(--ember) 85%,#fff 100%);
+  transform:rotate(28deg);transform-origin:right center;image-rendering:pixelated;
+  clip-path:polygon(0 40%,92% 0,100% 0,100% 100%,92% 100%,0 60%)}
+@media(prefers-reduced-motion:no-preference){
+  .streak{animation:fall 1.5s cubic-bezier(.5,0,.8,.6) .5s 1 forwards}
+}
+@keyframes fall{
+  0%{opacity:0;transform:translate(0,0) rotate(28deg)}
+  10%{opacity:1}
+  85%{opacity:1}
+  100%{opacity:0;transform:translate(-900px,480px) rotate(28deg)}
+}
+
+/* ---------- layout ---------- */
+.wrap{position:relative;z-index:1;max-width:1040px;margin:0 auto;padding:0 1.25rem}
+header.hero{padding:4.5rem 0 3rem;display:grid;gap:2.5rem;grid-template-columns:1.25fr 1fr;align-items:end}
+@media(max-width:820px){header.hero{grid-template-columns:1fr;padding-top:3rem}}
+h1{font:700 clamp(2.6rem,7.5vw,4.8rem)/.95 var(--px);margin:0;letter-spacing:-.01em;text-shadow:4px 4px 0 var(--ink)}
+h1 em{font-style:normal;color:var(--ember)}
+.lede{max-width:34rem;color:#c3cbf0;font-size:1.1rem;margin:1.2rem 0 0}
+
+/* ---------- pixel buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:.5rem;font:700 .9rem/1 var(--body);text-decoration:none;cursor:pointer;
+  padding:.7rem 1rem;border:3px solid var(--ink);background:var(--ember);color:var(--ink);
+  box-shadow:4px 4px 0 var(--ink);transition:transform .08s,box-shadow .08s}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn.jar{background:var(--emerald)}
+.btn.ghost{background:var(--panel);color:var(--text);border-color:var(--line);box-shadow:4px 4px 0 var(--ink)}
+.btn.off{background:transparent;color:#59649a;border:3px dashed var(--line);box-shadow:none;pointer-events:none}
+.btn.sm{padding:.5rem .75rem;font-size:.8rem;box-shadow:3px 3px 0 var(--ink)}
+
+/* ---------- latest panel ---------- */
+.latest{background:var(--panel);border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink),inset 0 0 0 3px var(--line);padding:1.4rem}
+.latest .k{color:var(--muted);font-size:.9rem;margin:0}
+.latest .v{font:700 2.4rem/1.1 var(--px);margin:.2rem 0 .1rem;color:var(--ember)}
+.latest .d{color:var(--muted);margin:0 0 1.1rem;font-size:.92rem}
+.acts{display:flex;gap:.6rem;flex-wrap:wrap}
+.clone{margin-top:1.1rem;padding-top:1rem;border-top:2px dashed var(--line)}
+.clone p{margin:0 0 .5rem;font-size:.85rem;color:var(--muted)}
+.cmd{display:flex;gap:.5rem;align-items:stretch}
+.cmd code{flex:1;min-width:0;overflow-x:auto;white-space:nowrap;background:var(--ink);padding:.6rem .7rem;font:500 .8rem/1.4 ui-monospace,Menlo,Consolas,monospace;color:#bfe9ff}
+
+/* ---------- controls ---------- */
+.bar{position:sticky;top:0;z-index:5;background:rgba(7,11,32,.92);backdrop-filter:blur(6px);
+  display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;padding:.8rem 0;border-bottom:2px solid var(--line)}
+.bar input{flex:1;min-width:200px;background:var(--panel);color:var(--text);border:3px solid var(--ink);box-shadow:inset 0 0 0 2px var(--line);
+  padding:.65rem .8rem;font:500 .95rem var(--body)}
+.bar input::placeholder{color:#6874ab}
+.chips{display:flex;gap:.4rem}
+.chip{font:700 .85rem var(--body);background:var(--panel);color:var(--muted);border:3px solid var(--ink);padding:.55rem .8rem;cursor:pointer;box-shadow:3px 3px 0 var(--ink)}
+.chip[aria-pressed=true]{background:var(--text);color:var(--ink)}
+.status{color:var(--muted);font-size:.85rem;margin:.9rem 0 0;min-height:1.3em}
+
+/* ---------- timeline ---------- */
+.year{display:grid;grid-template-columns:96px 1fr;gap:1rem;margin-top:2rem}
+@media(max-width:620px){.year{grid-template-columns:1fr;gap:.4rem}}
+.yr{font:700 2rem/1 var(--px);color:var(--ember);margin:0;position:sticky;top:4.6rem;align-self:start;text-shadow:3px 3px 0 var(--ink)}
+@media(max-width:620px){.yr{position:static}}
+.entries{list-style:none;margin:0;padding:0 0 0 1.4rem;border-left:4px solid var(--line);display:grid;gap:.8rem}
+.entry{position:relative;display:grid;grid-template-columns:minmax(140px,1.1fr) 1fr auto;gap:.6rem 1rem;align-items:center;
+  background:var(--panel);border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);padding:.8rem 1rem}
+.entry::before{content:"";position:absolute;left:calc(-1.4rem - 10px);top:50%;width:16px;height:16px;margin-top:-8px;background:var(--ember);border:3px solid var(--ink)}
+.entry.hasjar::before{background:var(--emerald)}
+@media(max-width:760px){.entry{grid-template-columns:1fr}}
+.tag{font:700 1.25rem/1.1 var(--px);word-break:break-word}
+.meta{color:var(--muted);font-size:.9rem}
+.badge{font:700 .7rem var(--body);background:var(--emerald);color:var(--ink);padding:.15rem .4rem;margin-left:.5rem;vertical-align:middle}
+.empty{padding:2.5rem 1rem;text-align:center;color:var(--muted)}
+
+footer{position:relative;z-index:1;margin-top:4rem;border-top:2px solid var(--line);padding:1.8rem 0 3rem;color:var(--muted);font-size:.88rem}
+footer p{max-width:46rem;margin:.3rem 0}
+footer a{color:var(--ember)}
+</style>
+</head>
+<body>
+<div class="sky" aria-hidden="true"><canvas id="stars"></canvas><div class="streak"></div></div>
+
+<div class="wrap">
+  <header class="hero">
+    <div>
+      <h1>Meteor Client <em>Archive</em></h1>
+      <p class="lede">Every release of Meteor Client, from 2020 to today. Download the source or a built jar, or clone the whole history.</p>
+    </div>
+    <aside class="latest" aria-label="Latest version">
+      <p class="k">Latest version</p>
+      <p class="v" id="lv">-</p>
+      <p class="d" id="ld"></p>
+      <div class="acts" id="lb"></div>
+      <div class="clone">
+        <p>Get everything with git:</p>
+        <div class="cmd"><code id="cmdtxt">git clone meteor-client-full-history.bundle</code><button class="btn ghost sm" id="copy" type="button">Copy</button></div>
+      </div>
+    </aside>
+  </header>
+
+  <div class="bar">
+    <input id="q" type="search" placeholder="Search a version, like 0.5.8 or 1.21" aria-label="Search versions" autocomplete="off">
+    <div class="chips" role="group" aria-label="Filter">
+      <button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
+      <button class="chip" type="button" data-f="jar" aria-pressed="false">Has jar</button>
+    </div>
+  </div>
+  <p class="status" id="status" aria-live="polite"></p>
+  <main id="timeline"></main>
+
+  <footer>
+    <p>Unofficial mirror of <a href="https://github.com/MeteorDevelopment/meteor-client">MeteorDevelopment/meteor-client</a>, licensed GPL-3.0. Official builds are on <a href="https://meteorclient.com">meteorclient.com</a>.</p>
+    <p>Each version only runs on the Minecraft version it was made for. Many servers ban Meteor, so read the rules before you join.</p>
+  </footer>
+</div>
+
+<script>
+const REPO="1x09/meteor-client-archive";
+const DATA=[{"tag": "1.21.8", "date": "2025-10-17", "size": 1.9, "jar": true}, {"tag": "1.21.5", "date": "2025-06-21", "size": 1.9, "jar": true}, {"tag": "1.21.4", "date": "2025-04-08", "size": 1.9, "jar": true}, {"tag": "v0.5.9", "date": "2025-01-06", "size": 1.8, "jar": true}, {"tag": "v0.5.8", "date": "2024-11-07", "size": 1.8, "jar": true}, {"tag": "v0.5.7", "date": "2024-06-21", "size": 1.8, "jar": true}, {"tag": "v0.5.6", "date": "2024-05-03", "size": 1.8, "jar": true}, {"tag": "v0.5.5", "date": "2023-12-08", "size": 1.8, "jar": true}, {"tag": "v0.5.5-norbit", "date": "2023-12-03", "size": 1.8, "jar": true}, {"tag": "v0.5.4", "date": "2023-10-08", "size": 1.8, "jar": true}, {"tag": "v0.5.4-damage-utils", "date": "2023-08-06", "size": 1.8, "jar": true}, {"tag": "v0.5.3", "date": "2023-06-09", "size": 1.8, "jar": true}, {"tag": "v0.5.2", "date": "2023-03-16", "size": 1.8, "jar": true}, {"tag": "v0.5.1", "date": "2022-12-10", "size": 1.8, "jar": true}, {"tag": "v0.5.0", "date": "2022-07-28", "size": 1.4, "jar": true}, {"tag": "v0.4.9", "date": "2022-06-08", "size": 1.3, "jar": true}, {"tag": "v0.4.8", "date": "2022-04-08", "size": 1.3, "jar": true}, {"tag": "v0.4.7", "date": "2022-01-21", "size": 1.3, "jar": true}, {"tag": "v0.4.6", "date": "2021-10-29", "size": 1.3, "jar": true}, {"tag": "v0.4.5", "date": "2021-07-19", "size": 1.6, "jar": true}, {"tag": "v0.4.4", "date": "2021-06-06", "size": 1.6, "jar": true}, {"tag": "v0.4.3", "date": "2021-04-23", "size": 1.4, "jar": true}, {"tag": "v0.4.2", "date": "2021-03-10", "size": 1.3, "jar": true}, {"tag": "v0.4.1", "date": "2021-02-14", "size": 1.3, "jar": true}, {"tag": "v0.4.0", "date": "2021-02-03", "size": 1.3, "jar": true}, {"tag": "v0.3.9", "date": "2021-01-07", "size": 1.2, "jar": true}, {"tag": "v0.3.8", "date": "2020-12-10", "size": 1.2, "jar": true}, {"tag": "v0.3.6", "date": "2020-10-26", "size": 1.1, "jar": true}, {"tag": "v0.3.5", "date": "2020-10-12", "size": 1.1, "jar": true}, {"tag": "v0.3.1", "date": "2020-08-17", "size": 2.3, "jar": false}, {"tag": "v0.3.0", "date": "2020-08-16", "size": 2.3, "jar": false}, {"tag": "v0.2.9", "date": "2020-08-06", "size": 2.3, "jar": false}, {"tag": "v0.2.8", "date": "2020-07-21", "size": 2.3, "jar": false}, {"tag": "v0.2.7", "date": "2020-07-19", "size": 2.3, "jar": false}, {"tag": "v0.2.6", "date": "2020-07-07", "size": 2.3, "jar": false}, {"tag": "v0.2.5", "date": "2020-06-30", "size": 2.2, "jar": false}, {"tag": "v0.2.4", "date": "2020-06-21", "size": 2.2, "jar": false}, {"tag": "v0.2.3", "date": "2020-05-28", "size": 0.9, "jar": false}, {"tag": "v0.2.2", "date": "2020-05-22", "size": 0.9, "jar": false}, {"tag": "v0.2.1", "date": "2020-04-28", "size": 0.4, "jar": false}, {"tag": "v0.2.0", "date": "2020-04-14", "size": 0.3, "jar": false}, {"tag": "v0.1.9", "date": "2020-04-10", "size": 0.3, "jar": false}, {"tag": "v0.1.8", "date": "2020-04-07", "size": 0.3, "jar": false}, {"tag": "v0.1.7", "date": "2020-04-03", "size": 0.3, "jar": false}, {"tag": "v0.1.6", "date": "2020-03-31", "size": 0.3, "jar": false}, {"tag": "v0.1.5", "date": "2020-03-28", "size": 0.2, "jar": false}, {"tag": "v0.1.4", "date": "2020-03-25", "size": 0.2, "jar": false}, {"tag": "v0.1.3", "date": "2020-03-22", "size": 0.2, "jar": false}, {"tag": "v0.1.2", "date": "2020-03-20", "size": 0.2, "jar": false}, {"tag": "v0.1.1", "date": "2020-03-18", "size": 0.2, "jar": false}, {"tag": "v0.1.0", "date": "2020-03-17", "size": 0.2, "jar": false}];
+const el=id=>document.getElementById(id);
+let assets=null, filter="all";
+
+/* stars */
+(function(){
+  const c=el("stars"),x=c.getContext("2d");
+  function draw(){
+    const w=c.width=Math.ceil(c.clientWidth/4),h=c.height=Math.ceil(c.clientHeight/4);
+    x.clearRect(0,0,w,h);
+    let s=7;const r=()=>(s=(s*16807)%2147483647)/2147483647;
+    for(let i=0;i<Math.round(w*h/110);i++){
+      const px=Math.floor(r()*w),py=Math.floor(r()*h*.9),b=r();
+      x.fillStyle=b>.93?"#ffd9a8":b>.6?"#cfd8ff":"#6c7bc4";
+      x.fillRect(px,py,1,1);
+      if(b>.97){x.fillRect(px-1,py,3,1);x.fillRect(px,py-1,1,3)}
+    }
+  }
+  draw();addEventListener("resize",draw);
+})();
+
+function hasJar(v){
+  if(assets) return assets.has(`meteor-client-${v.tag}.jar`);
+  return v.jar;
+}
+function buttons(v,small){
+  const s=small?" sm":"";
+  let h=`<a class="btn${s}" href="versions/meteor-client-${v.tag}.zip" download>Source zip</a>`;
+  h+=hasJar(v)
+    ?`<a class="btn jar${s}" href="https://github.com/${REPO}/releases/download/jars/meteor-client-${v.tag}.jar">Jar</a>`
+    :`<span class="btn off${s}" title="No jar built for this version">No jar</span>`;
+  return h;
+}
+function render(){
+  const q=el("q").value.trim().toLowerCase();
+  const rows=DATA.filter(v=>v.tag.toLowerCase().includes(q)&&(filter==="all"||hasJar(v)));
+  const byYear={};
+  rows.forEach(v=>{(byYear[v.date.slice(0,4)]??=[]).push(v)});
+  const years=Object.keys(byYear).sort((a,b)=>b-a);
+  el("timeline").innerHTML=years.length?years.map(y=>`
+    <section class="year"><h2 class="yr">${y}</h2><ol class="entries">${byYear[y].map(v=>`
+      <li class="entry${hasJar(v)?" hasjar":""}">
+        <div class="tag">${v.tag}${hasJar(v)?'<span class="badge">JAR</span>':''}</div>
+        <div class="meta">${v.date}, ${v.size} MB</div>
+        <div class="acts">${buttons(v,true)}</div>
+      </li>`).join("")}</ol></section>`).join("")
+    :`<p class="empty">No version matches "${q.replace(/[<>&"]/g,"")}". Try a shorter search, like 0.5.</p>`;
+  const jars=DATA.filter(hasJar).length;
+  el("status").textContent=`${rows.length} of ${DATA.length} versions shown. `+(assets?`${jars} jars are built.`:`Jar status is checked from GitHub.`);
+}
+const L=DATA[0];
+function renderLatest(){
+  el("lv").textContent=L.tag;
+  el("ld").textContent=`Released ${L.date}, ${L.size} MB source`;
+  el("lb").innerHTML=buttons(L,false);
+}
+el("q").addEventListener("input",render);
+document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{
+  filter=b.dataset.f;
+  document.querySelectorAll(".chip").forEach(o=>o.setAttribute("aria-pressed",o===b));
+  render();
+}));
+el("copy").addEventListener("click",async()=>{
+  try{await navigator.clipboard.writeText(el("cmdtxt").textContent);el("copy").textContent="Copied"}
+  catch{el("copy").textContent="Select and copy"}
+  setTimeout(()=>el("copy").textContent="Copy",1800);
+});
+renderLatest();render();
+
+/* ask GitHub which jars really exist */
+fetch(`https://api.github.com/repos/${REPO}/releases/tags/jars`)
+  .then(r=>r.ok?r.json():Promise.reject())
+  .then(j=>{assets=new Set(j.assets.map(a=>a.name));renderLatest();render()})
+  .catch(()=>{});
+</script>
+</body>
+</html>
