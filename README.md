@@ -7,3 +7,6 @@ Unofficial archive of [Meteor Client](https://github.com/MeteorDevelopment/meteo
 - `index.html` the GitHub Pages site listing everything
 
 Enable Pages: Settings > Pages > Deploy from branch > `main` / `(root)`.
+
+
+check https://1x09.github.io/meteor-client-archive/ for the Archive
